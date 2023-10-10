@@ -8,6 +8,7 @@ import Tsunami from '../img/Tsunami.svg'
 import SearchSvg from '../img/icons/Search.svg'
 import BgSvg from '../img/Bg.svg'
 import { Path } from 'react-native-svg';
+import Buttons from './Buttons';
 
 
 const folders = [
@@ -81,24 +82,14 @@ const HomeScreen = ({navigation}) => {
                   justifyContent: 'center',
                   alignSelf: 'center',
                   position: 'absolute',
-                  height: 950
+                  height: 750
                 }}>
                   <TrueShopSvg/>
                 </View>
             </View>
             <View style={homeStyles.icons}>
               <View>
-                <TouchableOpacity style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  flexDirection: 'row',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  backgroundColor: 'lightgray',
-                  paddingVertical: 10,
-                }} onPress={() => { navigation.navigate('Profile')}}>
+                <TouchableOpacity style={{ }} onPress={() => { navigation.navigate('Profile')}}>
                   <HomeSvg/>
                 </TouchableOpacity>
               </View>
