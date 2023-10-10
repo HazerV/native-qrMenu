@@ -25,69 +25,66 @@ const folders = [
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight
+    paddingTop: StatusBar.currentHeight,
+    minHeight: 100
   },
   scrollView: {
-    backgroundColor: "black"
+    backgroundColor: "black",
+    minHeight: 100
   }
 })
 
 const HomeScreen = ({navigation}) => {
   
   return (
+  
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
+      <StatusBar backgroundColor='black' animated={true} />
         <View style={homeStyles.container}>
-          <View>
-          <View style={homeStyles.head}>  
-            <Tsunami/>
-          </View>
-
-          <View style={homeStyles.buttonsSvg1}>
-
-          </View>  
-                <Text> Menu </Text>
+          <View style={{ }}>
+              <View style={homeStyles.head}>  
+                <Tsunami/>
+              </View>  
+              <Text> Menu </Text>
+                <Text style={ homeStyles.attention }>
+                  Уважаемые гости, если у Вас есть аллергия на какой-либо продукт, 
+                  пожалуйста, предупредите об этом Вашего официанта. 
+                  Меню является рекламной продукцией нашего ресторана. 
+                  Утвержденное контрольное меню с выходам
+                  и блюд и сведениями о пищевой ценности готовой продукции: 
+                  калорийности, содержании белков, 
+                  жиров, углеводов находится в уголке потребителя 
+                  и предоставляется по первому Вашему требованию.
                 
-                  <Text style={ homeStyles.attention }>
-                    Уважаемые гости, если у Вас есть аллергия на какой-либо продукт, 
-                    пожалуйста, предупредите об этом Вашего официанта. 
-                    Меню является рекламной продукцией нашего ресторана. 
-                    Утвержденное контрольное меню с выходам
-                    и блюд и сведениями о пищевой ценности готовой продукции: 
-                    калорийности, содержании белков, 
-                    жиров, углеводов находится в уголке потребителя 
-                    и предоставляется по первому Вашему требованию.
-                  
+              </Text>
+              <TouchableOpacity style={{
+                justifyContent: 'center',
+                alignSelf: 'center',
+              }} onPress={() => { navigation.navigate('Confidience') }}>
+                <Text style={{ color: '#BBBBBB', textDecorationLine: 'underline', height: 22, marginBottom: 12 }}>
+                  Политика конфиденциальности
                 </Text>
-
-                <TouchableOpacity style={{
-                  justifyContent: 'center',
-                  alignSelf: 'center',
-                }} onPress={() => { navigation.navigate('Confidience') }}>
-                  <Text style={{ color: '#BBBBBB', textDecorationLine: 'underline', height: 22, marginBottom: 12 }}>
-                    Политика конфиденциальности
-                  </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={{
-                  justifyContent: 'center',
-                  alignSelf: 'center'
-                }} onPress={() => { navigation.navigate('Oferta')}}>
-                  <Text style={{ color: '#BBBBBB', textDecorationLine: 'underline', height: 22 }}>
-                      Оферта 
-                  </Text>
-                </TouchableOpacity>
-
-                <View style={{
-                  justifyContent: 'center',
-                  alignSelf: 'center',
-                  position: 'absolute',
-                  height: 750
-                }}>
-                  <TrueShopSvg/>
-                </View>
+              </TouchableOpacity>
+              <TouchableOpacity style={{
+                justifyContent: 'center',
+                alignSelf: 'center'
+              }} onPress={() => { navigation.navigate('Oferta')}}>
+                <Text style={{ color: '#BBBBBB', textDecorationLine: 'underline', height: 22 }}>
+                    Оферта 
+                </Text>
+              </TouchableOpacity>
+              <View style={{
+                justifyContent: 'center',
+                alignSelf: 'center',
+                position: 'absolute',
+                height: 750
+              }}>
+                <TrueShopSvg/>
+              </View>
             </View>
-            <View style={homeStyles.icons}>
+
+            <View style={[homeStyles.icons, ]}>
               <View>
                 <TouchableOpacity style={{ }} onPress={() => { navigation.navigate('Profile')}}>
                   <HomeSvg/>
@@ -102,10 +99,10 @@ const HomeScreen = ({navigation}) => {
                 </TouchableOpacity>
               </View>
 
-              <View>
-              </View>
+
             </View>
           </View>
+          
         </ScrollView>
       </SafeAreaView>
     );

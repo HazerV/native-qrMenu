@@ -2,9 +2,11 @@ export const homeStyles = {
 
     container: {
         backgroundColor: "black",
-        minHeight: "100%",
+        minHeight: 100,
         display: "flex",
         flex: 1,
+        width: '100%',
+        height: '100%'
     },
     head: {
         justifyContent: 'center',  
@@ -66,6 +68,7 @@ export const homeStyles = {
         marginLeft: 16,
         marginRight: 16,
         marginBottom: 50,
+        flex: 1
     },
     
 }
