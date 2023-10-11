@@ -6,9 +6,8 @@ import HomeSvg from  '../img/icons/Home.svg'
 import { homeStyles } from './homeStyle';
 import Tsunami from '../img/Tsunami.svg'
 import SearchSvg from '../img/icons/Search.svg'
-import BgSvg from '../img/Bg.svg'
-import { Path } from 'react-native-svg';
-import Buttons from './Buttons';
+// import BgSvg from '../img/Bg.svg'
+// import { Path } from 'react-native-svg';
 
 
 const folders = [
