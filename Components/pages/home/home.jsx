@@ -82,7 +82,7 @@ const HomeScreen = ({navigation}) => {
 
             <View style={[homeStyles.icons]}>
               <View>
-                <TouchableOpacity style={{ }} onPress={() => { navigation.navigate('Profile')}}>
+                <TouchableOpacity style={{ }} onPress={() => { navigation.navigate('chooseZal')}}>
                   <HomeSvg/>
                 </TouchableOpacity>
               </View>

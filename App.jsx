@@ -8,6 +8,8 @@ import AppLoading from 'expo-app-loading';
 import Confidence from './Components/Confidence/conf';
 import Oferta from './Components/Oferta/oferta';
 import SalatScreen from './Components/pages/Salads/salads';
+import chooseZal from './Components/pages/chooseZal/chooseZal';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -57,12 +59,12 @@ const App = () => {
           }}
         />
         <Stack.Screen
-          name='Salad'
-          component={SalatScreen}
+          name='chooseZal'
+          component={chooseZal}
           options={{
             headerShown: false
           }}
-          />
+        />
 
       </Stack.Navigator>
     </NavigationContainer>
