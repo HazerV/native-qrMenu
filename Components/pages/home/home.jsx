@@ -1,23 +1,21 @@
 import React from 'react';
-import {View, Image, StyleSheet, Text, StatusBar, ScrollView, SafeAreaView, Button, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Text, StatusBar, ScrollView, SafeAreaView, Button, TouchableOpacity} from 'react-native';
 import TrueShopSvg from '../img/TrueShop.svg'
 import SunSvg from '../img/icons/Sun.svg'
 import HomeSvg from  '../img/icons/Home.svg'
 import { homeStyles } from './homeStyle';
 import Tsunami from '../img/Tsunami.svg'
 import SearchSvg from '../img/icons/Search.svg'
-// import BgSvg from '../img/Bg.svg'
-// import { Path } from 'react-native-svg';
 
 
 const folders = [
   {
     id: 1,
-    name: 'vova',
+    name: 'test1',
   },
   {
     id: 2,
-    name: 'Artyom'
+    name: 'test2'
   }
 ]
 
