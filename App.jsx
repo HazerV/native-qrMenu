@@ -60,6 +60,7 @@ const App = () => {
             headerShown: false
           }}
           />
+
       </Stack.Navigator>
     </NavigationContainer>
   )};
