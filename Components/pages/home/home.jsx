@@ -1,23 +1,14 @@
-import React from 'react';
-import {View, StyleSheet, Text, StatusBar, ScrollView, SafeAreaView, Button, TouchableOpacity} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {View, Image, StyleSheet, Text, StatusBar, ScrollView, SafeAreaView, Button, TouchableOpacity} from 'react-native';
 import TrueShopSvg from '../img/TrueShop.svg'
 import SunSvg from '../img/icons/Sun.svg'
 import HomeSvg from  '../img/icons/Home.svg'
 import { homeStyles } from './homeStyle';
-import Tsunami from '../img/Tsunami.svg'
+import Header from '../img/Header.png'
 import SearchSvg from '../img/icons/Search.svg'
+import Desert from '../img/Desert.png'
+import Brusket from '../img/Bruskett.png'
 
-
-const folders = [
-  {
-    id: 1,
-    name: 'test1',
-  },
-  {
-    id: 2,
-    name: 'test2'
-  }
-]
 
 const styles = StyleSheet.create({
   container: {
@@ -31,8 +22,9 @@ const styles = StyleSheet.create({
   }
 })
 
+
 const HomeScreen = ({navigation}) => {
-  
+
   return (
   
     <SafeAreaView style={styles.container}>
@@ -41,9 +33,19 @@ const HomeScreen = ({navigation}) => {
         <View style={homeStyles.container}>
           <View style={{ }}>
               <View style={homeStyles.head}>  
-                <Tsunami/>
-              </View>  
-              <Text> Menu </Text>
+                <Image source={Header} />
+              </View>          
+              <View>
+                <Text style={homeStyles.menu}>
+                  Меню
+                </Text>
+              </View>
+              <TouchableOpacity onPress={() => { navigation.navigate('Confidience') }}>
+                <View style={homeStyles.buttonsSvg}>
+                  <Image source={Desert} />
+                  <Image source={Brusket} />
+                </View>
+              </TouchableOpacity>
                 <Text style={ homeStyles.attention }>
                   Уважаемые гости, если у Вас есть аллергия на какой-либо продукт, 
                   пожалуйста, предупредите об этом Вашего официанта. 
@@ -71,14 +73,7 @@ const HomeScreen = ({navigation}) => {
                     Оферта 
                 </Text>
               </TouchableOpacity>
-              <View style={{
-                justifyContent: 'center',
-                alignSelf: 'center',
-                position: 'absolute',
-                height: 750
-              }}>
-                <TrueShopSvg/>
-              </View>
+
             </View>
 
             <View style={[homeStyles.icons, ]}>

@@ -9,36 +9,37 @@ export const homeStyles = {
         height: '100%'
     },
     head: {
+        alignSelf: 'center',
         justifyContent: 'center',  
-        marginBottom: -35
+        marginBottom: -35,
     },
     menu: {
         textAlign: 'left',
         color: 'white',
         fontSize: 24,
         fontFamily: "Gilroy-Medium",
-        marginBottom: 12,
-        marginLeft:15 
+        marginBottom: 25,
+        marginLeft:16 
     },
     firstrow: {
         display: 'flex',  
         flexDirection: 'row', 
         columnGap: 20, 
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        columnGap: 16
     },
     icons: {
         display: 'flex', flexDirection: 'row', columnGap: 8, justifyContent: 'flex-start'
     },
-    buttonsSvg1: {
-        justifyContent: 'center',
+    buttonsSvg: {
+        justifyContent: 'space-between',
         columnGap: 16,
         flexDirection: 'row',
         marginBottom: 16,
-        marginLeft: 21,
+        marginLeft: 16,
         width: '90%',
         marginStart: "5%",
         marginEnd: '10%',
-        
     },
     saladsZakus: {
         justifyContent: 'center',
@@ -51,10 +52,10 @@ export const homeStyles = {
     },
     buttonsSvg4: {
         justifyContent: 'center',
-        columnGap: 16,
+        columnGap: 32,
         flexDirection: 'row',
         marginBottom: 32,
-        marginLeft: 21,
+        marginLeft: 16,
         width: '90%',
         marginStart: "5%",
         marginEnd: '10%',
