@@ -11,32 +11,25 @@ export const homeStyles = {
     head: {
         alignSelf: 'center',
         justifyContent: 'center',  
-        marginBottom: -35,
+        marginBottom: 16,
+        marginTop: -40
     },
     menu: {
         textAlign: 'left',
         color: 'white',
         fontSize: 24,
-        fontFamily: "Gilroy-Medium",
+        fontFamily: "Gilroy-Regular",
         marginBottom: 25,
         marginLeft:16 
     },
-    firstrow: {
-        display: 'flex',  
-        flexDirection: 'row', 
-        columnGap: 20, 
-        justifyContent: 'space-between',
-        columnGap: 16
-    },
-    icons: {
-        display: 'flex', flexDirection: 'row', columnGap: 8, justifyContent: 'flex-start'
-    },
-    buttonsSvg: {
+    
+    buttons: {
         justifyContent: 'space-between',
         columnGap: 16,
         flexDirection: 'row',
         marginBottom: 16,
         marginLeft: 16,
+        marginRight: 30,
         width: '90%',
         marginStart: "5%",
         marginEnd: '10%',
@@ -64,12 +57,20 @@ export const homeStyles = {
         textAlign: 'justify',
         color: '#BBBBBB',
         fontSize: 14,
-        fontFamily: "Gilroy-Medium",
+        fontFamily: "Gilroy-Regular",
         alignSelf: 'center',
         marginLeft: 16,
         marginRight: 16,
-        marginBottom: 50,
-        flex: 1
+        marginBottom: 52
     },
-    
+    icons: {
+        display: 'flex', 
+        flexDirection: 'row', 
+        columnGap: 8, 
+        justifyContent: 'flex-start',
+        marginLeft: 16
+    },
+    oferta: {
+        color: '#BBBBBB', textDecorationLine: 'underline', height: 22, fontFamily: 'Gilroy-Regular'
+    }
 }

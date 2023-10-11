@@ -52,6 +52,9 @@ const App = () => {
         <Stack.Screen
           name='Oferta'
           component={Oferta}
+          options={{
+            headerShown: false
+          }}
         />
         <Stack.Screen
           name='Salad'

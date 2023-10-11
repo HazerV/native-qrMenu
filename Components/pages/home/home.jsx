@@ -8,7 +8,7 @@ import Header from '../img/Header.png'
 import SearchSvg from '../img/icons/Search.svg'
 import Desert from '../img/Desert.png'
 import Brusket from '../img/Bruskett.png'
-
+import TrueShop from '../img/TrueShop.png'
 
 const styles = StyleSheet.create({
   container: {
@@ -31,7 +31,7 @@ const HomeScreen = ({navigation}) => {
       <ScrollView style={styles.scrollView}>
       <StatusBar backgroundColor='black' animated={true} />
         <View style={homeStyles.container}>
-          <View style={{ }}>
+          <View>
               <View style={homeStyles.head}>  
                 <Image source={Header} />
               </View>          
@@ -41,7 +41,7 @@ const HomeScreen = ({navigation}) => {
                 </Text>
               </View>
               <TouchableOpacity onPress={() => { navigation.navigate('Confidience') }}>
-                <View style={homeStyles.buttonsSvg}>
+                <View style={homeStyles.buttons}>
                   <Image source={Desert} />
                   <Image source={Brusket} />
                 </View>
@@ -55,13 +55,12 @@ const HomeScreen = ({navigation}) => {
                   калорийности, содержании белков, 
                   жиров, углеводов находится в уголке потребителя 
                   и предоставляется по первому Вашему требованию.
-                
               </Text>
               <TouchableOpacity style={{
                 justifyContent: 'center',
                 alignSelf: 'center',
               }} onPress={() => { navigation.navigate('Confidience') }}>
-                <Text style={{ color: '#BBBBBB', textDecorationLine: 'underline', height: 22, marginBottom: 12 }}>
+                <Text style={homeStyles.oferta}>
                   Политика конфиденциальности
                 </Text>
               </TouchableOpacity>
@@ -69,14 +68,19 @@ const HomeScreen = ({navigation}) => {
                 justifyContent: 'center',
                 alignSelf: 'center'
               }} onPress={() => { navigation.navigate('Oferta')}}>
-                <Text style={{ color: '#BBBBBB', textDecorationLine: 'underline', height: 22 }}>
+                <Text style={homeStyles.oferta}>
                     Оферта 
                 </Text>
               </TouchableOpacity>
 
             </View>
+            
+            <Image style={{
+              alignSelf: 'center',
+            }}
+            source={TrueShop} />
 
-            <View style={[homeStyles.icons, ]}>
+            <View style={[homeStyles.icons]}>
               <View>
                 <TouchableOpacity style={{ }} onPress={() => { navigation.navigate('Profile')}}>
                   <HomeSvg/>
@@ -90,11 +94,8 @@ const HomeScreen = ({navigation}) => {
                   <SunSvg/>
                 </TouchableOpacity>
               </View>
-
-
             </View>
-          </View>
-          
+          </View>          
         </ScrollView>
       </SafeAreaView>
     );
