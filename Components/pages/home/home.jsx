@@ -40,7 +40,7 @@ const HomeScreen = ({navigation}) => {
                   Меню
                 </Text>
               </View>
-              <TouchableOpacity onPress={() => { navigation.navigate('Confidience') }}>
+              <TouchableOpacity onPress={() => { navigation.navigate('Category') }}>
                 <View style={homeStyles.buttons}>
                   <Image source={Desert} />
                   <Image source={Brusket} />
@@ -91,9 +91,7 @@ const HomeScreen = ({navigation}) => {
                 <SearchSvg/>
               </View>
               <View>
-                <TouchableOpacity onPress={() => { navigation.navigate('Profile')}}>
                   <SunSvg/>
-                </TouchableOpacity>
               </View>
             </View>
           </View>          

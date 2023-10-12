@@ -1,9 +1,9 @@
 import React from "react";
 import { View, StyleSheet, StatusBar, Text, Image, TouchableOpacity, SafeAreaView, ScrollView} from "react-native";
-import Header from '../Oferta/Header.png'
-import SunSvg from '../Oferta/Sun.svg'
-import HomeSvg from  '../Oferta/Home.svg'
-import SearchSvg from '../Oferta/Search.svg'
+import Header from './Header.png'
+import SunSvg from './Sun.svg'
+import HomeSvg from  './Home.svg'
+import SearchSvg from './Search.svg'
 import { stylesOferta } from "./stylesOferta.js";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 

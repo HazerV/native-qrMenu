@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import HomeScreen from './Components/pages/home/home';
-import Profile from './Components/pages/profile';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import useFonts from './assets/fonts/fonts';
 import AppLoading from 'expo-app-loading';
-import Confidence from './Components/Confidence/conf';
-import Oferta from './Components/Oferta/oferta';
+import Confidence from './Components/pages/Confidence/conf';
+import Oferta from './Components/pages/Oferta/oferta';
 import chooseZal from './Components/pages/chooseZal/chooseZal';
-
+import Category from './Components/Category/Category';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,18 +29,11 @@ const App = () => {
   }
 
   return (
-    <NavigationContainer>
+    <NavigationContainer> 
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{
-            headerShown: false
-          }}
-        />
-        <Stack.Screen
-          name="Profile"
-          component={Profile}
           options={{
             headerShown: false
           }}
@@ -64,6 +56,13 @@ const App = () => {
             headerShown: false
           }}
         />
+        <Stack.Screen
+          name='Category'
+          component={Category}
+          options={{
+            headerShown: false
+          }}
+        />  
 
       </Stack.Navigator>
     </NavigationContainer>

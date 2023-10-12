@@ -28,8 +28,8 @@ export const homeStyles = {
         columnGap: 16,
         flexDirection: 'row',
         marginBottom: 16,
-        marginLeft: 16,
-        marginRight: 30,
+        marginLeft: 10,
+        marginRight: 15,
         width: '90%',
         marginStart: "5%",
         marginEnd: '10%',
@@ -59,8 +59,8 @@ export const homeStyles = {
         fontSize: 14,
         fontFamily: "Gilroy-Regular",
         alignSelf: 'center',
-        marginLeft: 16,
-        marginRight: 16,
+        marginLeft: 10,
+        marginRight: 15,
         marginBottom: 52
     },
     icons: {
