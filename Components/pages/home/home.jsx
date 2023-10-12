@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     backgroundColor: "black",
-    minHeight: 100
+    minHeight: 100,
   }
 })
 
@@ -60,7 +60,8 @@ const HomeScreen = ({navigation}) => {
                 justifyContent: 'center',
                 alignSelf: 'center',
               }} onPress={() => { navigation.navigate('Confidience') }}>
-                <Text style={homeStyles.oferta}>
+                <Text style={[homeStyles.oferta, 
+                                    {marginBottom: 8}]}>
                   Политика конфиденциальности
                 </Text>
               </TouchableOpacity>

@@ -18,4 +18,29 @@ export const stylesOferta = {
         marginBottom: 16,
         marginTop: -40
     },
+    ofertaHead: {
+        fontFamily: 'Gilroy-Regular',
+        fontSize: 24,
+        fontWeight: 600,
+        marginBottom: 25,
+        marginLeft: 16,
+        color: 'white'
+    },
+    text: {
+        color: 'white',
+        fontSize: 12,
+        fontFamily: 'Gilroy-Regular',
+        fontWeight: 400,
+        marginBottom: 25,
+        marginLeft: 16,
+        whiteSpace:'preWrap',
+        lineHeight: 16,
+    },
+    footer: {
+        display: 'flex', 
+        flexDirection: 'row', 
+        columnGap: 8, 
+        justifyContent: 'flex-start',
+        // position: 'absolute'
+    }
 }

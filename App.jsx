@@ -7,7 +7,6 @@ import useFonts from './assets/fonts/fonts';
 import AppLoading from 'expo-app-loading';
 import Confidence from './Components/Confidence/conf';
 import Oferta from './Components/Oferta/oferta';
-import SalatScreen from './Components/pages/Salads/salads';
 import chooseZal from './Components/pages/chooseZal/chooseZal';
 
 
